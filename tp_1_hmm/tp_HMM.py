@@ -80,7 +80,7 @@ def verterbi(O, A, B, pi, N, T):
     """
     O: Vecteur d'observation
     A: Matrice de transition
-    B: Vecteur de distribution de probabilité d'observation des symboles selon l'état
+    B: Matrice de distribution de probabilité d'observation des symboles selon l'état
     pi: Probabilité des états à l'état initial
     N: Nombre d'état
     T: Nombre d'observation
@@ -133,6 +133,10 @@ def verterbi(O, A, B, pi, N, T):
         
     
     return q_ideal
+    
+
+
+## Application
 
 
 A = np.array([[0.999218078035812,  0.000781921964187974],
@@ -144,26 +148,6 @@ pi = np.array([1, 0])
 
 N = 2
 
-def fullRange(A, B, pi, N):
-    mailsData = getMailsData()
-
-    i = 0
-    for mailData in mailsData:
-        T = len(mailData)
-        path = verterbi(mailData, A, B, pi, N, T)
-        cassIndex = np.where(path==1)[0][0]
-        print("cas=%s (mail %s, size=%s, path=%s)"%(cassIndex, i, T, path))
-        #print(path)
-        
-        i += 1
-        
-def testMail1(A, B, pi, N):
-    mail1Data = getMailsData()[0]
-    T = len(mail1Data)
-    path = verterbi(mail1Data, A, B, pi, N, T)
-    index = np.where(path==1)[0][0]
-    print("index=%s"%index)
-    segment(open(FOLDER_PATH + "mail1.txt", "r"), "mail1.txt", index)
     
 def vertabiOnMail(mailName, A, B, pi, N):
     
@@ -176,7 +160,7 @@ def vertabiOnMail(mailName, A, B, pi, N):
     print("index=%s"%index)
     segment(open(FOLDER_PATH + mailName, "r"), mailName, index)
     
+# ouput in res/ folder
+    
 for i in range(1, 31):
     vertabiOnMail("mail%s.txt"%i, A, B, pi, N)
-    
-    
