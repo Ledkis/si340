@@ -9,7 +9,7 @@ Data:
 - sig.mat
 
 Result folders:
-- [changement de la fonction de calcul de distance](https://github.com/Ledkis/si340/tree/master/tp_2_dtw_parole_reco/res_d_eval]
+- [changement de la fonction de calcul de distance](https://github.com/Ledkis/si340/tree/master/tp_2_dtw_parole_reco/res_d_eval)
 - [changement de la fonction de la valeur de gamma](https://github.com/Ledkis/si340/tree/master/tp_2_dtw_parole_reco/res_p)
 - [changement de la fonction de la valeur de l'ordre du cepstre](https://github.com/Ledkis/si340/tree/master/tp_2_dtw_parole_reco/res_gamma)
 
@@ -64,7 +64,7 @@ np.array([[ 0,  2,  1,  1,  3,  6,  2,  2,  3,  3,  3,  9],
        [10,  8,  9,  9,  7,  8,  7,  7,  9,  5, 10,  7]])
 ```
 	   
-Pour le signal ```python SIG{0, 0}``` le résultat est très satisfaisant car l'on ne s'est pas
+Pour le signal SIG{0, 0} le résultat est très satisfaisant car l'on ne s'est pas
 trompé une fois, ce qui n'est pas le cas pour l'ensemble des autres signaux, 
 où finalement l'erreur total est très élevé : **59%**.
 
