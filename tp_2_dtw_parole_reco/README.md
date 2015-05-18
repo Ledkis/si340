@@ -1,9 +1,17 @@
 # TP 2 Reconnaissance de Parole
 
-Modules : 
+Modules: 
 - [tp_2.py](https://github.com/Ledkis/si340/blob/master/tp_2_dtw_parole_reco/tp_2_DTW_parole_reco.py)
 - [cepstre.py](https://github.com/Ledkis/si340/blob/master/tp_2_dtw_parole_reco/cepstre.py)
 - [dtw.py](https://github.com/Ledkis/si340/blob/master/tp_2_dtw_parole_reco/dtw.py)
+
+Data:
+- sig.mat
+
+Result folders:
+- [changement de la fonction de calcul de distance](https://github.com/Ledkis/si340/tree/master/tp_2_dtw_parole_reco/res_d_eval]
+- [changement de la fonction de la valeur de gamma](https://github.com/Ledkis/si340/tree/master/tp_2_dtw_parole_reco/res_p)
+- [changement de la fonction de la valeur de l'ordre du cepstre](https://github.com/Ledkis/si340/tree/master/tp_2_dtw_parole_reco/res_gamma)
 
 ## 2 Paramétrisation 
 
@@ -56,9 +64,9 @@ np.array([[ 0,  2,  1,  1,  3,  6,  2,  2,  3,  3,  3,  9],
        [10,  8,  9,  9,  7,  8,  7,  7,  9,  5, 10,  7]])
 ```
 	   
-Pour le signal SIG{0, 0} le résultat est très satisfaisant car l'on ne s'est pas
+Pour le signal ```python SIG{0, 0}``` le résultat est très satisfaisant car l'on ne s'est pas
 trompé une fois, ce qui n'est pas le cas pour l'ensemble des autres signaux, 
-où finalement l'erreur total est très élevé : 59%.
+où finalement l'erreur total est très élevé : **59%**.
 
 On pourra noter au passage que l'utilisation des cepstres accélère grandement le 
 calcul des distance
@@ -79,7 +87,7 @@ np.array([[ 3,  5,  3,  8,  6,  8,  5,  7,  8,  8,  6, 10],
        [ 4,  9,  6,  4,  3,  6,  4,  2,  6,  4,  4,  4],
        [ 9,  9, 10, 10,  7, 11,  8,  9, 10,  8,  9, 10]])
 ```   
-Dont le pourcentage d'erreur total est 70%. Pour gamma = 3 l'erreur monte à 75.9%.
+Dont le pourcentage d'erreur total est 70%. Pour gamma = 3 l'erreur monte à **75.9%**.
 
 Aussi uniquement pour le SIG{0, 0}, on obtient avec gamma entre 1 et 5 la suite
 d'erreur suivante : 0, 3, 7, 9, 10.
