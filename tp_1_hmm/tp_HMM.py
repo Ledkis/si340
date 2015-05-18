@@ -1,12 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed May  6 09:09:24 2015
-
-@author: Utilisateur
-"""
-
-
-# http://stackoverflow.com/questions/9729968/python-implementation-of-viterbi-algorithm
 
 import numpy as np
 
