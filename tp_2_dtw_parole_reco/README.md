@@ -84,6 +84,6 @@ Les meilleurs résultats sont obtenus pour gamma = 1.
 3 - L'utilisation de la distance euclidienne implicite le fait que l'on soit dans
 un espace euclidien.
 
-Pas compris 
+(Reste non compris )
 
 ## 5 - Evaluation de la reconnaissance - Non traité
